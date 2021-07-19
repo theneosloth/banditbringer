@@ -78,9 +78,9 @@ func scrapeCharacter(name string) {
 					fmt.Println("Failed to set the field", err)
 				}
 
-				moves = append(moves, m)
-
 			})
+
+			moves = append(moves, m)
 
 		})
 	})

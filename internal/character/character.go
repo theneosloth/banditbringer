@@ -44,16 +44,14 @@ func IsValidCharName(name string) (normalizedName string, found bool) {
 }
 
 type Character struct {
-	Name      string
-	Moves     []move.Move
-	nicknames []string
+	Name  string
+	Moves []move.Move
 }
 
 func (c *Character) SetName(name string) error {
-	normalizedName, found := IsValidCharName(name)
+	_, found := IsValidCharName(name)
 	if found {
 		c.Name = name
-		c.nicknames = validCharacters[normalizedName]
 		return nil
 	}
 	return errors.New("Not a valid character")
