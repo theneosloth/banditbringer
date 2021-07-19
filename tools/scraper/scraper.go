@@ -80,7 +80,9 @@ func scrapeCharacter(name string) {
 
 			})
 
-			moves = append(moves, m)
+			if len(m.Input) > 0 || len(m.Name) > 0 {
+				moves = append(moves, m)
+			}
 
 		})
 	})
