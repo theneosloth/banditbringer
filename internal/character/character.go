@@ -6,6 +6,12 @@ import (
 	"strings"
 )
 
+type Character struct {
+	Name    string
+	Moves   []move.Move
+	aliases []string
+}
+
 var validCharacters = map[string][]string{
 	"ky_kiske":            {"ky", "kyle"},
 	"anji_mito":           {"anji"},
@@ -16,10 +22,10 @@ var validCharacters = map[string][]string{
 	"i-no":                {"ino"},
 	"leo_whitefang":       {"leo"},
 	"may":                 {""},
-	"millia rage":         {"millia"},
+	"millia_rage":         {"millia"},
 	"nagoriyuki":          {"nago"},
 	"potemkin":            {"pot"},
-	"ramlethal valentine": {"ram", "valentine"},
+	"ramlethal_valentine": {"ram", "valentine"},
 	"sol_badguy":          {"sol"},
 	"zato-1":              {"zato", "eddie"},
 }
@@ -42,12 +48,6 @@ func IsValidCharName(name string) (normalizedName string, found bool) {
 	}
 	return "", false
 }
-
-type Character struct {
-	Name  string
-	Moves []move.Move
-}
-
 func (c *Character) SetName(name string) error {
 	_, found := IsValidCharName(name)
 	if found {

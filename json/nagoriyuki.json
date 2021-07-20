@@ -418,7 +418,7 @@
       "OnHit": "HKD",
       "RiscGain": "2000",
       "Level": "3",
-      "Invuln": "1~?F Full",
+      "Invuln": "1~10F Full",
       "Prorate": ""
     },
     {
@@ -433,7 +433,7 @@
       "OnHit": "HKD",
       "RiscGain": "2500",
       "Level": "4",
-      "Invuln": "1~?F Full",
+      "Invuln": "1~26F Full",
       "Prorate": ""
     },
     {

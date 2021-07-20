@@ -449,7 +449,7 @@
       "RiscGain": "",
       "Level": "",
       "Invuln": "1~7F Throw",
-      "Prorate": "50%"
+      "Prorate": "Forced 50%"
     },
     {
       "Input": "214S",
@@ -524,7 +524,7 @@
       "RiscGain": "",
       "Level": "",
       "Invuln": "",
-      "Prorate": ""
+      "Prorate": "Forced 50%"
     },
     {
       "Input": "",
@@ -539,7 +539,7 @@
       "RiscGain": "",
       "Level": "",
       "Invuln": "",
-      "Prorate": ""
+      "Prorate": "Forced 50%"
     },
     {
       "Input": "",
