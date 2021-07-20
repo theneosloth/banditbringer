@@ -1,0 +1,42 @@
+name: Go
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Go
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.16
+
+    - name: Build
+      run: go build -v ./...
+
+    - name: Test
+      run: go test -v ./...
+
+  build_arm:
+    strategy:
+      matrix:
+        go: [1.13, 1.14]
+    runs-on: [self-hosted, linux, ARM64]
+    steps:
+
+    - name: Install Go ${{ matrix.go }}
+      uses: actions/setup-go@v2
+      with:
+        go-version: ${{ matrix.go }}
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Run tests
+      run: go test -v
+
