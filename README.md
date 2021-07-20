@@ -1,5 +1,3 @@
 # Bandit Bringer
 
-# Running
-`docket build . -t banditbringer`
-`docker run -d -e DISCORD_TOKEN=TOKEN banditbringer`
+[https://discord.com/oauth2/authorize?client_id=866906317780418571&scope=bot&permissions=2147485760](Add to your server)
