@@ -22,7 +22,7 @@ jobs:
       run: go build ./cmd/scraper
 
     - name: Build the bot
-      run: go build ./cmd/banditbringer
+      run: go build ./cmd/bot
 
     - name: Test
       run: go test -v ./...
