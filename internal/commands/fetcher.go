@@ -122,7 +122,7 @@ func init() {
 
 			for _, move := range moves {
 				if normalizeCompare(move.Input, found[1]) || normalizeCompare(move.Name, found[1]) {
-					embed := generateEmbed(char, move)
+					embed := generateEmbed(character.Name, move)
 					s.ChannelMessageSendEmbed(m.ChannelID, embed)
 					return
 				}

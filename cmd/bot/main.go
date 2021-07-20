@@ -23,6 +23,7 @@ func main() {
 	err = dg.Open()
 	if err != nil {
 		fmt.Println("Error opening connection", err)
+		os.Exit(1)
 	}
 
 	dg.AddHandler(func(s *discordgo.Session, r *discordgo.Ready) {
