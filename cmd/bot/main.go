@@ -2,7 +2,6 @@ package main
 
 import (
 	"banditbringer/internal/commands"
-	"banditbringer/tools/scraper"
 
 	"fmt"
 	"os"
@@ -14,7 +13,6 @@ import (
 
 func main() {
 
-	scraper.Scrape()
 	Token := os.Getenv("DISCORD_TOKEN")
 	dg, err := discordgo.New("Bot " + Token)
 

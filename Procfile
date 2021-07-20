@@ -1,1 +1,1 @@
-worker: bin/banditbringer
+worker: bin/scraper && bin/banditbringer

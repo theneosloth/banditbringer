@@ -1,4 +1,4 @@
-package scraper
+package main
 
 import (
 	"banditbringer/internal/character"
@@ -13,7 +13,7 @@ import (
 	"github.com/gocolly/colly"
 )
 
-func Scrape() {
+func main() {
 	characters := [...]string{
 		"Ky Kiske",
 		"Anji Mito",
