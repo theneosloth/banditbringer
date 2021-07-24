@@ -39,7 +39,8 @@ func generateEmbed(character character.Character, m move.Move) *discordgo.Messag
 		if len(s) == 0 {
 			return "N/A"
 		}
-		return s
+		// TODO: Extend to escape all markdown
+		return strings.ReplaceAll(s, "*", "\\*")
 	}
 
 	title := ""
