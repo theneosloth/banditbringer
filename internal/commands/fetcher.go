@@ -43,8 +43,9 @@ func generateEmbed(character character.Character, m move.Move) *discordgo.Messag
 	}
 
 	title := ""
+	readableName := strings.Title(strings.ReplaceAll(m.Name, "_", " "))
 	if m.Name != "" {
-		title = fmt.Sprintf("%s\n%s", m.Name, m.Input)
+		title = fmt.Sprintf("%s\n%s", readableName, m.Input)
 	} else {
 		title = m.Input
 	}
