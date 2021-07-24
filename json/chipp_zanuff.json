@@ -1,6 +1,14 @@
 {
-  "Name": "chipp_zanuff",
-  "Moves": [
+  "name": "chipp_zanuff",
+  "image_url": "https://www.dustloop.com/wiki/images/thumb/d/d3/GGST_Chipp_Zanuff_Portrait.png/93px-GGST_Chipp_Zanuff_Portrait.png",
+  "defense": "1.26",
+  "guts": "4",
+  "prejump": "4",
+  "backdash": "20f/5f invuln",
+  "weight": "Normal",
+  "unique_movement_options": "Triple Jump, Wall Run",
+  "dustloop_url": "https://www.dustloop.com/wiki/index.php?title=GGST/Chipp_Zanuff/Frame_Data",
+  "moves": [
     {
       "Input": "5P",
       "Name": "",

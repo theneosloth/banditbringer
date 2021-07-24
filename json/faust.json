@@ -1,6 +1,14 @@
 {
-  "Name": "faust",
-  "Moves": [
+  "name": "faust",
+  "image_url": "https://www.dustloop.com/wiki/images/thumb/f/ff/GGST_Faust_Portrait.png/76px-GGST_Faust_Portrait.png",
+  "defense": "1.01",
+  "guts": "0",
+  "prejump": "4",
+  "backdash": "20f/5f invuln",
+  "weight": "Normal",
+  "unique_movement_options": "Scarecrow, Crawl, Steerable Air-Dash",
+  "dustloop_url": "https://www.dustloop.com/wiki/index.php?title=GGST/Faust/Frame_Data",
+  "moves": [
     {
       "Input": "5P",
       "Name": "",

@@ -3,13 +3,22 @@ package character
 import (
 	"banditbringer/internal/move"
 	"errors"
+	"reflect"
 	"strings"
 )
 
 type Character struct {
-	Name    string
-	Moves   []move.Move
-	aliases []string
+	Name                  string      `json:"name"`
+	ImageUrl              string      `json:"image_url"`
+	Defense               string      `json:"defense"`
+	Guts                  string      `json:"guts"`
+	Prejump               string      `json:"prejump"`
+	Backdash              string      `json:"backdash"`
+	Weight                string      `json:"weight"`
+	UniqueMovementOptions string      `json:"unique_movement_options"`
+	DustloopUrl           string      `json:"dustloop_url"`
+	Moves                 []move.Move `json:"moves"`
+	aliases               []string
 }
 
 var validCharacters = map[string][]string{
@@ -55,4 +64,28 @@ func (c *Character) SetName(name string) error {
 		return nil
 	}
 	return errors.New("Not a valid character")
+}
+
+func (c *Character) SetFieldByName(field string, value string) error {
+	rv := reflect.ValueOf(c)
+
+	if rv.Kind() != reflect.Ptr {
+		return errors.New("character is not a pointer")
+	}
+
+	rv = rv.Elem()
+
+	if rv.Kind() != reflect.Struct {
+		return errors.New("character is not a struct")
+	}
+
+	f := rv.FieldByName(field)
+
+	if !f.IsValid() || f.Kind() != reflect.String {
+		return errors.New("trying to set a field that is not a string")
+	}
+
+	f.SetString(value)
+
+	return nil
 }

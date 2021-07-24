@@ -1,6 +1,14 @@
 {
-  "Name": "ramlethal_valentine",
-  "Moves": [
+  "name": "ramlethal_valentine",
+  "image_url": "https://www.dustloop.com/wiki/images/thumb/f/fa/GGST_Ramlethal_Valentine_Portrait.png/120px-GGST_Ramlethal_Valentine_Portrait.png",
+  "defense": "1.06",
+  "guts": "1",
+  "prejump": "4f",
+  "backdash": "20f/5f invuln",
+  "weight": "Light",
+  "unique_movement_options": "",
+  "dustloop_url": "https://www.dustloop.com/wiki/index.php?title=GGST/Ramlethal_Valentine/Frame_Data",
+  "moves": [
     {
       "Input": "5P",
       "Name": "",

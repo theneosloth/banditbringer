@@ -1,6 +1,14 @@
 {
-  "Name": "millia_rage",
-  "Moves": [
+  "name": "millia_rage",
+  "image_url": "https://www.dustloop.com/wiki/images/thumb/a/ab/GGST_Millia_Rage_Portrait.png/79px-GGST_Millia_Rage_Portrait.png",
+  "defense": "1.18",
+  "guts": "2",
+  "prejump": "4",
+  "backdash": "16f/4f invuln",
+  "weight": "Light",
+  "unique_movement_options": "2 Air Dashes, Kapel",
+  "dustloop_url": "https://www.dustloop.com/wiki/index.php?title=GGST/Millia_Rage/Frame_Data",
+  "moves": [
     {
       "Input": "5P",
       "Name": "",

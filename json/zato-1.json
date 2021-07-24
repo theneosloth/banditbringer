@@ -1,6 +1,14 @@
 {
-  "Name": "zato-1",
-  "Moves": [
+  "name": "zato-1",
+  "image_url": "https://www.dustloop.com/wiki/images/thumb/d/df/GGST_Zato-1_Portrait.png/112px-GGST_Zato-1_Portrait.png",
+  "defense": "1.07",
+  "guts": "0",
+  "prejump": "4",
+  "backdash": "20f/5f invuln",
+  "weight": "Normal",
+  "unique_movement_options": "Flight",
+  "dustloop_url": "https://www.dustloop.com/wiki/index.php?title=GGST/Zato-1/Frame_Data",
+  "moves": [
     {
       "Input": "5P",
       "Name": "",

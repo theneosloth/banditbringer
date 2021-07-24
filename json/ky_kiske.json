@@ -1,6 +1,14 @@
 {
-  "Name": "ky_kiske",
-  "Moves": [
+  "name": "ky_kiske",
+  "image_url": "https://www.dustloop.com/wiki/images/thumb/2/21/GGST_Ky_Kiske_Portrait.png/80px-GGST_Ky_Kiske_Portrait.png",
+  "defense": "1.00",
+  "guts": "2",
+  "prejump": "4",
+  "backdash": "20f/5f invuln",
+  "weight": "Normal",
+  "unique_movement_options": "",
+  "dustloop_url": "https://www.dustloop.com/wiki/index.php?title=GGST/Ky_Kiske/Frame_Data",
+  "moves": [
     {
       "Input": "5P",
       "Name": "",

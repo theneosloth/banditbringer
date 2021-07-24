@@ -1,6 +1,14 @@
 {
-  "Name": "axl_low",
-  "Moves": [
+  "name": "axl_low",
+  "image_url": "https://www.dustloop.com/wiki/images/thumb/b/b7/GGST_Axl_Low_Portrait.png/113px-GGST_Axl_Low_Portrait.png",
+  "defense": "1.07",
+  "guts": "1",
+  "prejump": "4f",
+  "backdash": "20f/5f invuln",
+  "weight": "Normal",
+  "unique_movement_options": "",
+  "dustloop_url": "https://www.dustloop.com/wiki/index.php?title=GGST/Axl_Low/Frame_Data",
+  "moves": [
     {
       "Input": "5P",
       "Name": "",

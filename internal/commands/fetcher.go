@@ -32,7 +32,7 @@ func loadChar(name string) (character character.Character) {
 	return character
 }
 
-func generateEmbed(character string, m move.Move) *discordgo.MessageEmbed {
+func generateEmbed(character character.Character, m move.Move) *discordgo.MessageEmbed {
 
 	// Embed silently fails if given an empty string
 	replaceEmptyString := func(s string) string {
@@ -53,6 +53,14 @@ func generateEmbed(character string, m move.Move) *discordgo.MessageEmbed {
 		Author:      &discordgo.MessageEmbedAuthor{},
 		Color:       0x00ff00, // Green
 		Description: title,
+		Thumbnail: &discordgo.MessageEmbedThumbnail{
+			URL:      character.ImageUrl,
+			ProxyURL: "https://www.guiltygear.com/ggst/assets/logo.jpg",
+			Width:    50,
+			Height:   50,
+		},
+		URL: character.DustloopUrl,
+
 		Fields: []*discordgo.MessageEmbedField{
 			{
 				Name:   "Damage",
@@ -80,7 +88,7 @@ func generateEmbed(character string, m move.Move) *discordgo.MessageEmbed {
 				Inline: true,
 			},
 		},
-		Title: strings.Title(character),
+		Title: strings.Title(character.Name),
 	}
 
 }
@@ -122,7 +130,7 @@ func init() {
 
 			for _, move := range moves {
 				if normalizeCompare(move.Input, found[1]) || normalizeCompare(move.Name, found[1]) {
-					embed := generateEmbed(character.Name, move)
+					embed := generateEmbed(character, move)
 					s.ChannelMessageSendEmbed(m.ChannelID, embed)
 					return
 				}

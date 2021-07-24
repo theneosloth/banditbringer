@@ -1,6 +1,14 @@
 {
-  "Name": "may",
-  "Moves": [
+  "name": "may",
+  "image_url": "https://www.dustloop.com/wiki/images/thumb/0/0d/GGST_May_Portrait.png/88px-GGST_May_Portrait.png",
+  "defense": "1.06",
+  "guts": "4",
+  "prejump": "4",
+  "backdash": "16f/4f invuln",
+  "weight": "Light",
+  "unique_movement_options": "",
+  "dustloop_url": "https://www.dustloop.com/wiki/index.php?title=GGST/May/Frame_Data",
+  "moves": [
     {
       "Input": "5P",
       "Name": "",

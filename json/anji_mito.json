@@ -1,6 +1,14 @@
 {
-  "Name": "anji_mito",
-  "Moves": [
+  "name": "anji_mito",
+  "image_url": "https://www.dustloop.com/wiki/images/thumb/5/5c/GGST_Anji_Mito_Portrait.png/81px-GGST_Anji_Mito_Portrait.png",
+  "defense": "1.06",
+  "guts": "5",
+  "prejump": "4",
+  "backdash": "20f/5f invuln",
+  "weight": "Normal",
+  "unique_movement_options": "Issokutobi",
+  "dustloop_url": "https://www.dustloop.com/wiki/index.php?title=GGST/Anji_Mito/Frame_Data",
+  "moves": [
     {
       "Input": "5P",
       "Name": "",

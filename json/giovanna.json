@@ -1,6 +1,14 @@
 {
-  "Name": "giovanna",
-  "Moves": [
+  "name": "giovanna",
+  "image_url": "https://www.dustloop.com/wiki/images/thumb/3/3f/GGST_Giovanna_Portrait.png/77px-GGST_Giovanna_Portrait.png",
+  "defense": "1.03",
+  "guts": "1",
+  "prejump": "4f",
+  "backdash": "20f/5f invuln",
+  "weight": "Light",
+  "unique_movement_options": "",
+  "dustloop_url": "https://www.dustloop.com/wiki/index.php?title=GGST/Giovanna/Frame_Data",
+  "moves": [
     {
       "Input": "5P",
       "Name": "",

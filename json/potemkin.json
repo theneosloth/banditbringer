@@ -1,6 +1,14 @@
 {
-  "Name": "potemkin",
-  "Moves": [
+  "name": "potemkin",
+  "image_url": "https://www.dustloop.com/wiki/images/thumb/e/ec/GGST_Potemkin_Portrait.png/108px-GGST_Potemkin_Portrait.png",
+  "defense": "0.93",
+  "guts": "3",
+  "prejump": "5f",
+  "backdash": "24f/6f invuln",
+  "weight": "Heavy",
+  "unique_movement_options": "No Run nor Airdash",
+  "dustloop_url": "https://www.dustloop.com/wiki/index.php?title=GGST/Potemkin/Frame_Data",
+  "moves": [
     {
       "Input": "5P",
       "Name": "",

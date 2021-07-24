@@ -17,7 +17,8 @@ func main() {
 	dg, err := discordgo.New("Bot " + Token)
 
 	if err != nil {
-		panic(err)
+		fmt.Fprintf(os.Stderr, "error %s", err)
+		os.Exit(1)
 	}
 
 	err = dg.Open()
