@@ -89,3 +89,7 @@ func (c *Character) SetFieldByName(field string, value string) error {
 
 	return nil
 }
+
+func (c *Character) GetReadableName() string {
+	return strings.Title(strings.ReplaceAll(c.Name, "_", " "))
+}
