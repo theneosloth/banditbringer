@@ -177,7 +177,12 @@ func init() {
 
 			char := found[0]
 
-			normalizedName, charExists := character.IsValidCharName(char)
+			// Hotfix, investigate later
+			if len(char) == 0 {
+				return
+			}
+
+			normalizedName, charExists := character.IsValidName(char)
 
 			if !charExists {
 				s.ChannelMessageSend(m.ChannelID, "Character does not exist")

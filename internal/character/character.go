@@ -39,7 +39,7 @@ var validCharacters = map[string][]string{
 	"zato-1":              {"zato", "eddie"},
 }
 
-func IsValidCharName(name string) (normalizedName string, found bool) {
+func IsValidName(name string) (normalizedName string, found bool) {
 
 	name = strings.ToLower(strings.Replace(name, " ", "_", -1))
 	_, exists := validCharacters[name]
@@ -57,8 +57,13 @@ func IsValidCharName(name string) (normalizedName string, found bool) {
 	}
 	return "", false
 }
+
+func (c *Character) GetReadableName() string {
+	return strings.Title(strings.ReplaceAll(c.Name, "_", " "))
+}
+
 func (c *Character) SetName(name string) error {
-	_, found := IsValidCharName(name)
+	_, found := IsValidName(name)
 	if found {
 		c.Name = name
 		return nil
@@ -90,6 +95,9 @@ func (c *Character) SetFieldByName(field string, value string) error {
 	return nil
 }
 
-func (c *Character) GetReadableName() string {
-	return strings.Title(strings.ReplaceAll(c.Name, "_", " "))
+func (c *Character) GetAllMoves() (moves []string) {
+	for i, v := range c.Moves {
+		moves[i] = v.Input
+	}
+	return moves
 }
