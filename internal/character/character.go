@@ -96,6 +96,7 @@ func (c *Character) SetFieldByName(field string, value string) error {
 }
 
 func (c *Character) GetAllMoves() (moves []string) {
+	moves = make([]string, len(c.Moves))
 	for i, v := range c.Moves {
 		moves[i] = v.Input
 	}

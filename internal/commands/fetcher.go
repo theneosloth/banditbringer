@@ -11,6 +11,7 @@ import (
 	"strings"
 
 	"github.com/bwmarrin/discordgo"
+	"github.com/hbollon/go-edlib"
 )
 
 var Fetcher Command
@@ -171,16 +172,11 @@ func init() {
 		callback: func(s *discordgo.Session, m *discordgo.MessageCreate) {
 			found := strings.SplitN(m.Content, " ", 2)
 
-			if len(found) == 0 {
+			if len(found[0]) == 0 {
 				return
 			}
 
 			char := found[0]
-
-			// Hotfix, investigate later
-			if len(char) == 0 {
-				return
-			}
 
 			normalizedName, charExists := character.IsValidName(char)
 
@@ -211,6 +207,14 @@ func init() {
 				}
 			}
 
+			res, err := edlib.FuzzySearchSet(strings.ToUpper(found[1]), character.GetAllMoves(), 4, edlib.Levenshtein)
+			if err != nil {
+				fmt.Println(err)
+			} else if len(res) > 0 {
+				msg := fmt.Sprintf("Move not found. Did you mean one of the following: %s?", strings.Join(res, ", "))
+				s.ChannelMessageSend(m.ChannelID, msg)
+				return
+			}
 			s.ChannelMessageSend(m.ChannelID, "Move not found")
 
 		},
