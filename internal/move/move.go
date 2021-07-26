@@ -7,8 +7,9 @@ import (
 
 // Stringly typed :(
 type Move struct {
-	Input    string
+	Images   string
 	Name     string
+	Input    string
 	Damage   string
 	Guard    string
 	Startup  string
@@ -16,10 +17,15 @@ type Move struct {
 	Recovery string
 	OnBlock  string
 	OnHit    string
-	RiscGain string
 	Level    string
-	Invuln   string
+	CHType   string
+	Hitboxes string
+	Notes    string
+	Type     string
+	RISCGain string
 	Prorate  string
+	Invuln   string
+	Cancel   string
 }
 
 func (m *Move) SetFieldByName(field string, value string) error {

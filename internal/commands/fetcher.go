@@ -51,15 +51,23 @@ func generateMoveEmbed(character character.Character, m move.Move) *discordgo.Me
 		description = m.Input
 	}
 
+	image := "N/A"
+	if m.Hitboxes != "" {
+		image = m.Hitboxes
+	} else if m.Images != "" {
+		image = m.Images
+	} else {
+		image = character.Icon
+	}
+
 	return &discordgo.MessageEmbed{
 		Author:      &discordgo.MessageEmbedAuthor{},
 		Color:       0x00ff00, // Green
 		Description: description,
 		Thumbnail: &discordgo.MessageEmbedThumbnail{
-			URL:      character.ImageUrl,
-			ProxyURL: "https://www.guiltygear.com/ggst/assets/logo.jpg",
-			Width:    50,
-			Height:   50,
+			URL:    image,
+			Width:  50,
+			Height: 50,
 		},
 		URL: character.DustloopUrl,
 
@@ -110,10 +118,9 @@ func generateCharEmbed(c character.Character) *discordgo.MessageEmbed {
 		Color:       0x00ff00,
 		Description: "",
 		Thumbnail: &discordgo.MessageEmbedThumbnail{
-			URL:      c.ImageUrl,
-			ProxyURL: "https://www.guiltygear.com/ggst/assets/logo.jpg",
-			Width:    50,
-			Height:   50,
+			URL:    c.Icon,
+			Width:  50,
+			Height: 50,
 		},
 		URL: c.DustloopUrl,
 
@@ -130,7 +137,7 @@ func generateCharEmbed(c character.Character) *discordgo.MessageEmbed {
 			},
 			{
 				Name:   "Prejump",
-				Value:  replaceEmptyString(c.Prejump),
+				Value:  replaceEmptyString(c.PreJump),
 				Inline: true,
 			},
 			{

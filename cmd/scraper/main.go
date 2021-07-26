@@ -13,6 +13,8 @@ import (
 	"github.com/gocolly/colly"
 )
 
+var baseURL = "http://dustloop.com"
+
 func main() {
 	characters := [...]string{
 		"Ky Kiske",
@@ -37,12 +39,18 @@ func main() {
 	}
 }
 
+// Fragile and ugly, probably better to construct a map	of heading names to struct names
+func HeadingToStructName(name string) string {
+	return strings.TrimSpace(
+		strings.Title(
+			strings.ReplaceAll(strings.ReplaceAll(name, "-", " "), " ", "")))
+}
+
 func scrapeCharacter(name string) {
 	name = strings.Replace(name, " ", "_", -1)
 	moves := make([]move.Move, 0)
 
-	url := fmt.Sprintf("https://www.dustloop.com/wiki/index.php?title=GGST/%s/Frame_Data", name)
-	imageUrl := fmt.Sprintf("https://www.dustloop.com/wiki/index.php?title=File:GGST_%s_Portrait.png", name)
+	url := fmt.Sprintf("%s/wiki/index.php?title=GGST/%s/Data", baseURL, name)
 
 	c := colly.NewCollector()
 
@@ -53,71 +61,70 @@ func scrapeCharacter(name string) {
 	})
 
 	// System Data table
-	c.OnHTML(".cargoTable", func(table *colly.HTMLElement) {
+	c.OnHTML("table.sortable", func(table *colly.HTMLElement) {
 		structure := make([]string, 0)
-		table.ForEach("thead tr th", func(_ int, th *colly.HTMLElement) {
+
+		table.ForEach("tr th", func(_ int, th *colly.HTMLElement) {
 			if len(th.Text) == 0 {
 				return
 			}
 			structure = append(structure, th.Text)
 		})
 
-		table.ForEach("tr", func(i int, tr *colly.HTMLElement) {
-			// TODO: Handle Giovannas Shrek install
-			if i > 1 {
-				return
-			}
-			tr.ForEach("td", func(j int, td *colly.HTMLElement) {
-				key := strings.ReplaceAll(strings.Title(structure[j]), " ", "")
-				err := char.SetFieldByName(key, td.Text)
-				if err != nil {
-					fmt.Println("Failed to set the field", err)
-				}
+		table.ForEach("tr td", func(i int, th *colly.HTMLElement) {
+			field := HeadingToStructName(structure[i])
 
-			})
+			result := ""
+			// TODO: Handle multiple images properly
+			if field == "Portrait" || field == "Icon" {
+				result = fmt.Sprintf("%s%s", baseURL, th.ChildAttr("img", "src"))
+			} else {
+				result = strings.TrimSpace(th.Text)
+			}
+
+			err := char.SetFieldByName(field, result)
+			if err != nil {
+				fmt.Println("failed to set", err, field)
+			}
 		})
 
 	})
-	c.OnHTML(".cargoDynamicTable ", func(e *colly.HTMLElement) {
 
-		// Store the order of table headings, since it's inconsistent between tables
+	//individual move tables
+	c.OnHTML("table.wikitable:not(.sortable)", func(table *colly.HTMLElement) {
 		structure := make([]string, 0)
 
-		e.ForEach("thead tr th", func(_ int, th *colly.HTMLElement) {
+		m := move.Move{}
+		table.ForEach("tr th", func(_ int, th *colly.HTMLElement) {
 			if len(th.Text) == 0 {
 				return
 			}
 			structure = append(structure, th.Text)
 		})
 
-		e.ForEach("tr", func(_ int, tr *colly.HTMLElement) {
-			m := move.Move{}
+		table.ForEach("tr td", func(i int, th *colly.HTMLElement) {
+			field := HeadingToStructName(structure[i])
 
-			tr.ForEach("td", func(i int, td *colly.HTMLElement) {
-
-				// First element in the table is blank, the rest align with the table headings
-				if i == 0 {
-					return
-				}
-				i = i - 1
-
-				key := strings.Title(structure[i])
-				err := m.SetFieldByName(key, td.Text)
-				if err != nil {
-					fmt.Println("Failed to set the field", err)
+			result := ""
+			if field == "Images" || field == "Hitboxes" {
+				if th.ChildAttr("img", "src") != "" {
+					result = fmt.Sprintf("%s%s", baseURL, th.ChildAttr("img", "src"))
 				}
 
-			})
+			} else {
+				result = strings.TrimSpace(th.Text)
+			}
 
-			if len(m.Input) > 0 || len(m.Name) > 0 {
-				moves = append(moves, m)
+			err := m.SetFieldByName(field, result)
+			if err != nil {
+				fmt.Println("failed to set", err, field)
 			}
 
 		})
-	})
+		if len(m.Input) > 0 || len(m.Name) > 0 {
+			moves = append(moves, m)
+		}
 
-	c.OnHTML("#mw-imagepage-section-filehistory img", func(img *colly.HTMLElement) {
-		char.ImageUrl = "https://www.dustloop.com" + img.Attr("src")
 	})
 
 	c.OnScraped(func(r *colly.Response) {
@@ -128,7 +135,6 @@ func scrapeCharacter(name string) {
 	})
 
 	c.Visit(url)
-	c.Visit(imageUrl)
 }
 
 func writeJson(char character.Character) error {
