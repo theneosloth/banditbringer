@@ -32,6 +32,7 @@ func main() {
 		"Ramlethal Valentine",
 		"Sol Badguy",
 		"Zato-1",
+		"Goldlewis Dickinson",
 	}
 
 	for _, character := range characters {
@@ -41,9 +42,22 @@ func main() {
 
 // Fragile and ugly, probably better to construct a map	of heading names to struct names
 func HeadingToStructName(name string) string {
-	return strings.TrimSpace(
-		strings.Title(
-			strings.ReplaceAll(strings.ReplaceAll(name, "-", " "), " ", "")))
+	name = strings.TrimSpace(name)
+	aliases := map[string]string{
+		"R.I.S.C. Gain":          "RiscGain",
+		"CH Type":                "ChType",
+		"PreJump":                "Prejump",
+		"R.I.S.C. Gain Modifier": "RiscModifier",
+	}
+
+	alias, hasAlias := aliases[name]
+
+	if hasAlias {
+		return alias
+	}
+
+	return strings.Title(
+		strings.ReplaceAll(strings.ReplaceAll(name, "-", " "), " ", ""))
 }
 
 func scrapeCharacter(name string) {

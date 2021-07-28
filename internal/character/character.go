@@ -12,7 +12,8 @@ type Character struct {
 	Name                  string      `json:"name"`
 	Defense               string      `json:"defense"`
 	Guts                  string      `json:"guts"`
-	PreJump               string      `json:"prejump"`
+	RiscModifier          string      `json:"risc_modifier"`
+	Prejump               string      `json:"prejump"`
 	Backdash              string      `json:"backdash"`
 	Weight                string      `json:"weight"`
 	UniqueMovementOptions string      `json:"unique_movement_options"`
@@ -41,6 +42,7 @@ var validCharacters = map[string][]string{
 	"ramlethal_valentine": {"ram", "valentine"},
 	"sol_badguy":          {"sol"},
 	"zato-1":              {"zato", "eddie"},
+	"goldlewis_dickinson": {"goldick", "golddick", "goldlewis"},
 }
 
 func IsValidName(name string) (normalizedName string, found bool) {

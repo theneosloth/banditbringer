@@ -137,7 +137,7 @@ func generateCharEmbed(c character.Character) *discordgo.MessageEmbed {
 			},
 			{
 				Name:   "Prejump",
-				Value:  replaceEmptyString(c.PreJump),
+				Value:  replaceEmptyString(c.Prejump),
 				Inline: true,
 			},
 			{

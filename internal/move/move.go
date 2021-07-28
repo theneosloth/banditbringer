@@ -7,25 +7,25 @@ import (
 
 // Stringly typed :(
 type Move struct {
-	Images   string
-	Name     string
-	Input    string
-	Damage   string
-	Guard    string
-	Startup  string
-	Active   string
-	Recovery string
-	OnBlock  string
-	OnHit    string
-	Level    string
-	CHType   string
-	Hitboxes string
-	Notes    string
-	Type     string
-	RISCGain string
-	Prorate  string
-	Invuln   string
-	Cancel   string
+	Images    string
+	Name      string
+	Input     string
+	Damage    string
+	Guard     string
+	Startup   string
+	Active    string
+	Recovery  string
+	OnBlock   string
+	OnHit     string
+	Level     string
+	ChType    string
+	Hitboxes  string
+	Notes     string
+	Type      string
+	RiscGain  string
+	Proration string
+	Invuln    string
+	Cancel    string
 }
 
 func (m *Move) SetFieldByName(field string, value string) error {
