@@ -30,7 +30,7 @@
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "80%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -51,7 +51,7 @@
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "70%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -72,7 +72,7 @@
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "100%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -93,7 +93,7 @@
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "90%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -114,7 +114,7 @@
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "100%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -135,7 +135,7 @@
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "80% [100%]",
       "Invuln": "",
       "Cancel": ""
     },
@@ -156,7 +156,7 @@
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "80%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -177,7 +177,7 @@
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "70%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -198,7 +198,7 @@
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "90%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -219,7 +219,7 @@
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "100%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -240,7 +240,7 @@
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "90%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -261,7 +261,7 @@
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "100%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -282,7 +282,7 @@
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "100%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -303,7 +303,7 @@
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "80%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -324,7 +324,7 @@
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "80%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -345,7 +345,7 @@
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "80%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -366,7 +366,7 @@
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "80%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -387,7 +387,7 @@
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "80%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -408,7 +408,7 @@
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "90%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -429,7 +429,7 @@
       "Notes": "",
       "Type": "other",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "50%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -450,7 +450,7 @@
       "Notes": "",
       "Type": "other",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "50%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -471,7 +471,7 @@
       "Notes": "",
       "Type": "special",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "80%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -513,7 +513,7 @@
       "Notes": "",
       "Type": "special",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "50%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -534,7 +534,7 @@
       "Notes": "",
       "Type": "special",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "50%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -555,7 +555,7 @@
       "Notes": "",
       "Type": "special",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "80%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -576,7 +576,7 @@
       "Notes": "Doing 2146K~P will perform a Kara Backwards Megafist. This will move Potemkin very slightly forward, at the cost of his +4 advantage (becomes -2 on block but also gains 15 damage).",
       "Type": "special",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "80%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -594,10 +594,10 @@
       "Level": "4",
       "ChType": "",
       "Hitboxes": "",
-      "Notes": "Armor starts at frame 3",
+      "Notes": "",
       "Type": "special",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "80%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -618,7 +618,7 @@
       "Notes": "",
       "Type": "special",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "100%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -639,7 +639,7 @@
       "Notes": "",
       "Type": "special",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "80%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -660,7 +660,7 @@
       "Notes": "",
       "Type": "special",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "100%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -681,7 +681,7 @@
       "Notes": "",
       "Type": "super",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "100%",
       "Invuln": "",
       "Cancel": ""
     },
@@ -702,7 +702,7 @@
       "Notes": "",
       "Type": "super",
       "RiscGain": "",
-      "Proration": "",
+      "Proration": "100%",
       "Invuln": "",
       "Cancel": ""
     }
