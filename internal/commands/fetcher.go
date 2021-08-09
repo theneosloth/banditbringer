@@ -168,8 +168,22 @@ func normalizeCommand(command string) string {
 	)
 }
 
+func removeDiagonals(command string) string {
+	diagonals := regexp.MustCompile(`[1379]+`)
+	return diagonals.ReplaceAllString(command, "")
+}
+
 func normalizeCompare(i string, j string) bool {
 	return normalizeCommand(i) == normalizeCommand(j)
+}
+
+func sameMove(command1 string, command2 string) bool {
+	normalizedEqual := normalizeCompare(command1, command2)
+	// Try again with diagonals removed for HCF motions
+	if !normalizedEqual && len(command1) > 3 && len(command2) > 3 {
+		normalizedEqual = normalizeCompare(removeDiagonals(command1), removeDiagonals(command2))
+	}
+	return normalizedEqual
 }
 
 func init() {
@@ -207,7 +221,7 @@ func init() {
 			moves := character.Moves
 
 			for _, move := range moves {
-				if normalizeCompare(move.Input, found[1]) || normalizeCompare(move.Name, found[1]) {
+				if sameMove(move.Input, found[1]) || normalizeCompare(move.Name, found[1]) {
 					embed := generateMoveEmbed(character, move)
 					s.ChannelMessageSendEmbed(m.ChannelID, embed)
 					return
