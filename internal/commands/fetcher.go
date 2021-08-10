@@ -3,6 +3,7 @@ package commands
 import (
 	"banditbringer/internal/character"
 	"banditbringer/internal/move"
+	"banditbringer/internal/util"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -32,17 +33,15 @@ func loadChar(name string) (character character.Character) {
 
 	return character
 }
+func replaceEmptyString(s string) string {
+	if len(s) == 0 {
+		return "N/A"
+	}
+	// TODO: Extend to escape all markdown
+	return strings.ReplaceAll(s, "*", "\\*")
+}
 
 func generateMoveEmbed(character character.Character, m move.Move) *discordgo.MessageEmbed {
-
-	// Embed silently fails if given an empty string
-	replaceEmptyString := func(s string) string {
-		if len(s) == 0 {
-			return "N/A"
-		}
-		// TODO: Extend to escape all markdown
-		return strings.ReplaceAll(s, "*", "\\*")
-	}
 
 	description := ""
 	if m.Name != "" {
@@ -60,47 +59,18 @@ func generateMoveEmbed(character character.Character, m move.Move) *discordgo.Me
 		image = character.Icon
 	}
 
-	return &discordgo.MessageEmbed{
-		Author:      &discordgo.MessageEmbedAuthor{},
-		Color:       0x00ff00, // Green
-		Description: description,
-		Thumbnail: &discordgo.MessageEmbedThumbnail{
-			URL:    image,
-			Width:  50,
-			Height: 50,
-		},
-		URL: character.DustloopUrl,
-
-		Fields: []*discordgo.MessageEmbedField{
-			{
-				Name:   "Damage",
-				Value:  replaceEmptyString(m.Damage),
-				Inline: true,
-			},
-			{
-				Name:   "Guard",
-				Value:  replaceEmptyString(m.Guard),
-				Inline: true,
-			},
-			{
-				Name:   "Startup",
-				Value:  replaceEmptyString(m.Startup),
-				Inline: true,
-			},
-			{
-				Name:   "On Block",
-				Value:  replaceEmptyString(m.OnBlock),
-				Inline: true,
-			},
-			{
-				Name:   "On Hit",
-				Value:  replaceEmptyString(m.OnHit),
-				Inline: true,
-			},
-		},
-		Title: character.GetReadableName(),
-	}
-
+	return util.NewEmbed().
+		SetTitle(character.GetReadableName()).
+		SetDescription(description).
+		SetThumbnail(image).
+		SetColor(0xaf0016).
+		AddField("Damage", m.Damage).
+		AddField("Guard", m.Guard).
+		AddField("Startup", m.Startup).
+		AddField("On Block", m.OnBlock).
+		AddField("On Hit", m.OnHit).
+		InlineAllFields().
+		MessageEmbed
 }
 
 func generateCharEmbed(c character.Character) *discordgo.MessageEmbed {
