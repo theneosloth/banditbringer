@@ -31,6 +31,13 @@ func TestCheckCommand(t *testing.T) {
 	if testInvalid {
 		t.Errorf("%s should be an invalid command", invalidCommand)
 	}
+
+	noWord := "!!!!!?"
+	testWord := testCommand.checkCommand(noWord)
+	if testWord {
+		t.Errorf("%s should be an invalid command", noWord)
+	}
+
 }
 
 func TestRun(t *testing.T) {

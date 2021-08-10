@@ -1,6 +1,7 @@
 package commands
 
 import (
+	"regexp"
 	"strings"
 
 	"github.com/bwmarrin/discordgo"
@@ -20,6 +21,14 @@ type Command struct {
 }
 
 func (c *Command) checkCommand(m string) bool {
+	hasLetter := regexp.MustCompile(".*[A-z].*")
+
+	isWord := hasLetter.MatchString(m)
+
+	if !isWord {
+		return false
+	}
+
 	return strings.HasPrefix(m, c.Prefix)
 }
 
