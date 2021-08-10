@@ -33,13 +33,6 @@ func loadChar(name string) (character character.Character) {
 
 	return character
 }
-func replaceEmptyString(s string) string {
-	if len(s) == 0 {
-		return "N/A"
-	}
-	// TODO: Extend to escape all markdown
-	return strings.ReplaceAll(s, "*", "\\*")
-}
 
 func generateMoveEmbed(character character.Character, m move.Move) *discordgo.MessageEmbed {
 
@@ -74,60 +67,17 @@ func generateMoveEmbed(character character.Character, m move.Move) *discordgo.Me
 }
 
 func generateCharEmbed(c character.Character) *discordgo.MessageEmbed {
-	// Embed silently fails if given an empty string
-	replaceEmptyString := func(s string) string {
-		if len(s) == 0 {
-			return "N/A"
-		}
-		// TODO: Extend to escape all markdown
-		return strings.ReplaceAll(s, "*", "\\*")
-	}
-
-	return &discordgo.MessageEmbed{
-		Author:      &discordgo.MessageEmbedAuthor{},
-		Color:       0x00ff00,
-		Description: "",
-		Thumbnail: &discordgo.MessageEmbedThumbnail{
-			URL:    c.Icon,
-			Width:  50,
-			Height: 50,
-		},
-		URL: c.DustloopUrl,
-
-		Fields: []*discordgo.MessageEmbedField{
-			{
-				Name:   "Defense",
-				Value:  replaceEmptyString(c.Defense),
-				Inline: true,
-			},
-			{
-				Name:   "Guts",
-				Value:  replaceEmptyString(c.Guts),
-				Inline: true,
-			},
-			{
-				Name:   "Prejump",
-				Value:  replaceEmptyString(c.Prejump),
-				Inline: true,
-			},
-			{
-				Name:   "Backdash",
-				Value:  replaceEmptyString(c.Backdash),
-				Inline: true,
-			},
-			{
-				Name:   "Weight",
-				Value:  replaceEmptyString(c.Weight),
-				Inline: true,
-			},
-			{
-				Name:  "Unique Movement Options",
-				Value: replaceEmptyString(c.UniqueMovementOptions),
-			},
-		},
-		Title: c.GetReadableName(),
-	}
-
+	return util.NewEmbed().
+		SetTitle(c.GetReadableName()).
+		SetThumbnail(c.Icon).
+		SetColor(0xaf0016).
+		SetURL(c.DustloopUrl).
+		AddField("Defense", c.Defense).
+		AddField("Guts", c.Guts).
+		AddField("Prejump", c.Prejump).
+		AddField("Backdash", c.Backdash).
+		AddField("Weight", c.Weight).
+		AddField("Unique Movement Options", c.UniqueMovementOptions).MessageEmbed
 }
 
 func normalizeCommand(command string) string {
