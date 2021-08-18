@@ -48,7 +48,7 @@ func main() {
 
 	command := slashcommands.Fetcher
 
-	_, err = dg.ApplicationCommandCreate(dg.State.User.ID, "404881906690293760", command.ApplicationCommand)
+	_, err = dg.ApplicationCommandCreate(dg.State.User.ID, "", command.ApplicationCommand)
 	if err != nil {
 		log.Panicf("Cannot create '%v' command: %v", command.ApplicationCommand.Name, err)
 	}
