@@ -2,6 +2,8 @@ package main
 
 import (
 	"banditbringer/internal/commands"
+	"banditbringer/internal/slashcommands"
+	"log"
 
 	"fmt"
 	"os"
@@ -17,18 +19,16 @@ func main() {
 	dg, err := discordgo.New("Bot " + Token)
 
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "error %s", err)
-		os.Exit(1)
+		log.Panicf("error %s", err)
 	}
 
 	err = dg.Open()
 	if err != nil {
-		fmt.Println("Error opening connection", err)
-		os.Exit(1)
+		log.Panicf("Error opening connection %s", err)
 	}
 
 	dg.AddHandler(func(s *discordgo.Session, r *discordgo.Ready) {
-		fmt.Println("Started successfully")
+		log.Println("Started successfully")
 	})
 
 	activeCommands := []commands.Command{
@@ -44,6 +44,16 @@ func main() {
 			command.Run(s, m)
 		}
 
+	})
+
+	command := slashcommands.Fetcher
+
+	_, err = dg.ApplicationCommandCreate(dg.State.User.ID, "404881906690293760", command.ApplicationCommand)
+	if err != nil {
+		log.Panicf("Cannot create '%v' command: %v", command.ApplicationCommand.Name, err)
+	}
+	dg.AddHandler(func(s *discordgo.Session, i *discordgo.InteractionCreate) {
+		command.Run(s, i)
 	})
 
 	defer func() {
