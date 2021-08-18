@@ -12,10 +12,6 @@ import (
 var Fetcher SlashCommand
 var characterNames []string
 
-func init() {
-	characterNames = character.GetAllCharacters()
-}
-
 func generateMoveEmbed(character character.Character, m move.Move) *discordgo.MessageEmbed {
 
 	description := ""
@@ -74,6 +70,7 @@ func init() {
 		s.InteractionRespond(i.Interaction, m)
 	})
 
+	characterNames = character.GetAllCharacters()
 	nameOption := Fetcher.AddOption(discordgo.ApplicationCommandOptionString, "name", "The character name", true)
 	for _, char := range characterNames {
 		nameOption.AddChoice(char, char)
