@@ -112,3 +112,11 @@ func (c *Character) GetAllMoves() (moves []string) {
 	}
 	return moves
 }
+
+func GetAllCharacters() []string {
+	characters := make([]string, len(validCharacters))
+	for k := range validCharacters {
+		characters = append(characters, k)
+	}
+	return characters
+}
