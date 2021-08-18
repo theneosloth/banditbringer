@@ -4,33 +4,16 @@ import (
 	"banditbringer/internal/character"
 	"banditbringer/internal/move"
 	"banditbringer/internal/util"
-	"encoding/json"
 	"fmt"
-	"io/ioutil"
-	"path/filepath"
-	"regexp"
-	"strings"
 
 	"github.com/bwmarrin/discordgo"
 )
 
 var Fetcher SlashCommand
+var characterNames []string
 
-func loadChar(name string) (character character.Character) {
-	name = strings.Replace(name, " ", "_", -1)
-
-	fname := fmt.Sprintf("%s.json", name)
-	fpath, err := filepath.Abs(filepath.Join("json", fname))
-
-	file, err := ioutil.ReadFile(fpath)
-
-	if err != nil {
-		panic(err)
-	}
-
-	json.Unmarshal(file, &character)
-
-	return character
+func init() {
+	characterNames = character.GetAllCharacters()
 }
 
 func generateMoveEmbed(character character.Character, m move.Move) *discordgo.MessageEmbed {
@@ -79,37 +62,20 @@ func generateCharEmbed(c character.Character) *discordgo.MessageEmbed {
 		AddField("Unique Movement Options", c.UniqueMovementOptions).MessageEmbed
 }
 
-func normalizeCommand(command string) string {
-	pattern := regexp.MustCompile(`[\s.,]+`)
-	return pattern.ReplaceAllString(
-		strings.TrimSpace(strings.ToLower(command)),
-		"",
-	)
-}
-
-func removeDiagonals(command string) string {
-	diagonals := regexp.MustCompile(`[1379]+`)
-	return diagonals.ReplaceAllString(command, "")
-}
-
-func normalizeCompare(i string, j string) bool {
-	return normalizeCommand(i) == normalizeCommand(j)
-}
-
-func sameMove(command1 string, command2 string) bool {
-	normalizedEqual := normalizeCompare(command1, command2)
-	// Try again with diagonals removed for HCF motions
-	if !normalizedEqual && len(command1) > 3 && len(command2) > 3 {
-		normalizedEqual = normalizeCompare(removeDiagonals(command1), removeDiagonals(command2))
-	}
-	return normalizedEqual
-}
-
 func init() {
 	Fetcher = *NewSlashCommand("fetcher", "Frame data fetcher", func(s *discordgo.Session, i *discordgo.InteractionCreate) {
-		character := loadChar("May")
+		name := i.ApplicationCommandData().Options[0].StringValue()
+		if name == "" {
+			return
+		}
+		character := character.LoadChar(name)
 		embed := generateCharEmbed(character)
 		m := util.CreateInteractionEmbed(embed)
 		s.InteractionRespond(i.Interaction, m)
 	})
+
+	nameOption := Fetcher.AddOption(discordgo.ApplicationCommandOptionString, "name", "The character name", true)
+	for _, char := range characterNames {
+		nameOption.AddChoice(char, char)
+	}
 }
