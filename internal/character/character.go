@@ -39,10 +39,11 @@ var validCharacters = map[string][]string{
 	"millia_rage":         {"millia"},
 	"nagoriyuki":          {"nago"},
 	"potemkin":            {"pot"},
-	"ramlethal_valentine": {"ram", "valentine"},
+	"ramlethal_valentine": {"ram"},
 	"sol_badguy":          {"sol"},
 	"zato-1":              {"zato", "eddie"},
 	"goldlewis_dickinson": {"goldick", "golddick", "goldlewis"},
+	"jack-o":              {"aria", "jacko"},
 }
 
 func IsValidName(name string) (normalizedName string, found bool) {

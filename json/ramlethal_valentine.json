@@ -543,7 +543,7 @@
       "Name": "Sabrubato",
       "Input": "214H",
       "Damage": "100 [75] {50}",
-      "Guard": "All",
+      "Guard": "All (Guard Crush)",
       "Startup": "19",
       "Active": "4",
       "Recovery": "42",

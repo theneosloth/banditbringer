@@ -396,7 +396,7 @@
       "Name": "",
       "Input": "6H",
       "Damage": "70 [90]",
-      "Guard": "All [Guard Crush]",
+      "Guard": "All [All (Guard Crush)]",
       "Startup": "16 [40]",
       "Active": "6 [6]",
       "Recovery": "24 [24]",

@@ -33,6 +33,7 @@ func main() {
 		"Sol Badguy",
 		"Zato-1",
 		"Goldlewis Dickinson",
+		"Jack-O",
 	}
 
 	for _, character := range characters {

@@ -93,7 +93,7 @@
       "Notes": "",
       "Type": "normal",
       "RiscGain": "20",
-      "Proration": "100%",
+      "Proration": "90%",
       "Invuln": "",
       "Cancel": "SRP"
     },
@@ -167,8 +167,8 @@
       "Damage": "34",
       "Guard": "All",
       "Startup": "10",
-      "Active": "3",
-      "Recovery": "18",
+      "Active": "6",
+      "Recovery": "15",
       "OnBlock": "-7",
       "OnHit": "-4",
       "Level": "2",
@@ -287,7 +287,7 @@
       "Cancel": "SRP"
     },
     {
-      "Images": "http://dustloop.com/wiki/images/thumb/6/6b/GGST_Sol_jD.png/109px-GGST_Sol_jD.png",
+      "Images": "http://dustloop.com/wiki/images/thumb/6/6b/GGST_Sol_jD.png/110px-GGST_Sol_jD.png",
       "Name": "",
       "Input": "j.D",
       "Damage": "45",
@@ -455,7 +455,7 @@
       "Cancel": "RP"
     },
     {
-      "Images": "http://dustloop.com/wiki/images/thumb/b/b2/GGST_Sol_214K.png/110px-GGST_Sol_214K.png",
+      "Images": "http://dustloop.com/wiki/images/thumb/b/b2/GGST_Sol_214K.png/107px-GGST_Sol_214K.png",
       "Name": "Finish Blow",
       "Input": "j.XX during Homing Jump",
       "Damage": "80",
@@ -518,16 +518,16 @@
       "Cancel": "P"
     },
     {
-      "Images": "http://dustloop.com/wiki/images/thumb/e/e7/GGST_Sol_623S.png/70px-GGST_Sol_623S.png",
+      "Images": "http://dustloop.com/wiki/images/thumb/e/e7/GGST_Sol_623S.png/62px-GGST_Sol_623S.png",
       "Name": "Volcanic Viper",
       "Input": "623S",
       "Damage": "40",
       "Guard": "All",
       "Startup": "7",
-      "Active": "2(3)4",
-      "Recovery": "17+10 after landing",
-      "OnBlock": "-22",
-      "OnHit": "KD(+23)",
+      "Active": "3(3)8",
+      "Recovery": "18+10 after landing",
+      "OnBlock": "-28",
+      "OnHit": "KD(+17)",
       "Level": "2",
       "ChType": "Mid",
       "Hitboxes": "",
@@ -535,11 +535,11 @@
       "Type": "special",
       "RiscGain": "15",
       "Proration": "80%",
-      "Invuln": "1~8F Strike",
+      "Invuln": "1~9F Strike",
       "Cancel": "RP"
     },
     {
-      "Images": "http://dustloop.com/wiki/images/thumb/e/e7/GGST_Sol_623S.png/70px-GGST_Sol_623S.png",
+      "Images": "http://dustloop.com/wiki/images/thumb/e/e7/GGST_Sol_623S.png/62px-GGST_Sol_623S.png",
       "Name": "Volcanic Viper",
       "Input": "623H",
       "Damage": "35,40[35,100]",
@@ -560,7 +560,7 @@
       "Cancel": "RP"
     },
     {
-      "Images": "http://dustloop.com/wiki/images/thumb/e/e7/GGST_Sol_623S.png/70px-GGST_Sol_623S.png",
+      "Images": "http://dustloop.com/wiki/images/thumb/e/e7/GGST_Sol_623S.png/62px-GGST_Sol_623S.png",
       "Name": "Volcanic Viper",
       "Input": "j.623S",
       "Damage": "40",
@@ -581,7 +581,7 @@
       "Cancel": "RP"
     },
     {
-      "Images": "http://dustloop.com/wiki/images/thumb/e/e7/GGST_Sol_623S.png/70px-GGST_Sol_623S.png",
+      "Images": "http://dustloop.com/wiki/images/thumb/e/e7/GGST_Sol_623S.png/62px-GGST_Sol_623S.png",
       "Name": "Volcanic Viper",
       "Input": "j.623H",
       "Damage": "35,40[35,100]",
@@ -644,7 +644,7 @@
       "Cancel": "RP"
     },
     {
-      "Images": "http://dustloop.com/wiki/images/thumb/b/b2/GGST_Sol_214K.png/110px-GGST_Sol_214K.png",
+      "Images": "http://dustloop.com/wiki/images/thumb/b/b2/GGST_Sol_214K.png/107px-GGST_Sol_214K.png",
       "Name": "Bandit Bringer",
       "Input": "214K",
       "Damage": "50",
@@ -665,14 +665,14 @@
       "Cancel": "RP"
     },
     {
-      "Images": "http://dustloop.com/wiki/images/thumb/b/b2/GGST_Sol_214K.png/110px-GGST_Sol_214K.png",
+      "Images": "http://dustloop.com/wiki/images/thumb/b/b2/GGST_Sol_214K.png/107px-GGST_Sol_214K.png",
       "Name": "Bandit Bringer",
       "Input": "j.214K",
       "Damage": "40",
       "Guard": "High",
       "Startup": "25~33",
       "Active": "Until landing",
-      "Recovery": "Until landing+12",
+      "Recovery": "Until landing+18",
       "OnBlock": "",
       "OnHit": "HKD",
       "Level": "3",
@@ -695,7 +695,7 @@
       "Active": "2",
       "Recovery": "Whiff: 41",
       "OnBlock": "",
-      "OnHit": "HKD(+8)",
+      "OnHit": "HKD(+15)",
       "Level": "",
       "ChType": "",
       "Hitboxes": "",
@@ -710,13 +710,13 @@
       "Images": "http://dustloop.com/wiki/images/thumb/6/67/GGST_Sol_214S1.png/110px-GGST_Sol_214S1.png",
       "Name": "Night Raid Vortex",
       "Input": "214S",
-      "Damage": "45 [55]",
+      "Damage": "45[55]",
       "Guard": "All",
-      "Startup": "15~31 [32]",
-      "Active": "2 [8]",
-      "Recovery": "32 [26]",
+      "Startup": "15~31[32]",
+      "Active": "2[8]",
+      "Recovery": "32[26]",
       "OnBlock": "-17",
-      "OnHit": "HKD (+66) [HKD (+64)]",
+      "OnHit": "HKD(+66)[HKD(+64)]",
       "Level": "3",
       "ChType": "Large",
       "Hitboxes": "",
@@ -724,7 +724,7 @@
       "Type": "special",
       "RiscGain": "20",
       "Proration": "100%",
-      "Invuln": "7-(14~30)F [7-31F] Low Profile",
+      "Invuln": "7F til 1F before active Low Profile",
       "Cancel": "RP"
     },
     {
@@ -732,7 +732,7 @@
       "Name": "Fafnir",
       "Input": "41236H",
       "Damage": "65",
-      "Guard": "Guard Crush",
+      "Guard": "All (Guard Crush)",
       "Startup": "24",
       "Active": "3",
       "Recovery": "16",

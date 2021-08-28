@@ -648,7 +648,7 @@
       "Name": "Garuda Impact",
       "Input": "214H",
       "Damage": "73",
-      "Guard": "Guard Crush",
+      "Guard": "All (Guard Crush)",
       "Startup": "28",
       "Active": "11",
       "Recovery": "24",

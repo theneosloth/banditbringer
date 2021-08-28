@@ -325,7 +325,7 @@
       "Type": "normal",
       "RiscGain": "",
       "Proration": "90%",
-      "Invuln": "",
+      "Invuln": "1~13F Upper Body",
       "Cancel": ""
     },
     {
@@ -451,7 +451,7 @@
       "Type": "special",
       "RiscGain": "",
       "Proration": "90%",
-      "Invuln": "",
+      "Invuln": "5~15F Low Profile",
       "Cancel": ""
     },
     {
@@ -472,7 +472,7 @@
       "Type": "special",
       "RiscGain": "",
       "Proration": "90%",
-      "Invuln": "",
+      "Invuln": "9~27F Low Profile",
       "Cancel": ""
     },
     {
@@ -648,7 +648,7 @@
       "Name": "Ultimate Fortissimo",
       "Input": "632146S",
       "Damage": "40,20x2,100",
-      "Guard": "All",
+      "Guard": "All (Guard Crush)",
       "Startup": "6+2",
       "Active": "",
       "Recovery": "",
@@ -669,7 +669,7 @@
       "Name": "Ultimate Fortissimo",
       "Input": "j.632146S",
       "Damage": "20x2,100",
-      "Guard": "All",
+      "Guard": "All (Guard Crush)",
       "Startup": "5+3",
       "Active": "",
       "Recovery": "",
