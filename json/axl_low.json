@@ -11,7 +11,7 @@
   "icon": "http://dustloop.com/wiki/images/b/b6/GGST_Axl_Low_Icon.png",
   "voice": "",
   "theme": "",
-  "dustloop_url": "http://dustloop.com/wiki/index.php?title=GGST/Axl_Low/Data",
+  "dustloop_url": "http://dustloop.com/wiki/index.php?title=GGST/Axl_Low",
   "moves": [
     {
       "Images": "http://dustloop.com/wiki/images/thumb/a/a9/GGST_Axl_Low_5P.png/110px-GGST_Axl_Low_5P.png",
@@ -586,7 +586,7 @@
       "Input": "214H",
       "Damage": "45",
       "Guard": "All",
-      "Startup": "17",
+      "Startup": "14",
       "Active": "12",
       "Recovery": "29",
       "OnBlock": "-24",

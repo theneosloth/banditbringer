@@ -11,7 +11,7 @@
   "icon": "http://dustloop.com/wiki/images/6/64/GGST_Leo_Whitefang_Icon.png",
   "voice": "",
   "theme": "",
-  "dustloop_url": "http://dustloop.com/wiki/index.php?title=GGST/Leo_Whitefang/Data",
+  "dustloop_url": "http://dustloop.com/wiki/index.php?title=GGST/Leo_Whitefang",
   "moves": [
     {
       "Images": "http://dustloop.com/wiki/images/thumb/a/af/GGST_Leo_Whitefang_5P.png/110px-GGST_Leo_Whitefang_5P.png",
@@ -401,7 +401,7 @@
       "Active": "3",
       "Recovery": "26",
       "OnBlock": "-15 [-10]",
-      "OnHit": "",
+      "OnHit": "0",
       "Level": "",
       "ChType": "",
       "Hitboxes": "",
@@ -791,7 +791,7 @@
       "Cancel": ""
     },
     {
-      "Images": "http://dustloop.com/wiki/images/thumb/7/71/GGST_Leo_Whitefang_Stahl_Wirbel.png/94px-GGST_Leo_Whitefang_Stahl_Wirbel.png",
+      "Images": "http://dustloop.com/wiki/images/thumb/7/71/GGST_Leo_Whitefang_Stahl_Wirbel.png/110px-GGST_Leo_Whitefang_Stahl_Wirbel.png",
       "Name": "Stahl Wirbel",
       "Input": "632146S",
       "Damage": "170",

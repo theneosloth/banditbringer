@@ -11,7 +11,7 @@
   "icon": "http://dustloop.com/wiki/images/b/b2/GGST_Anji_Mito_Icon.png",
   "voice": "",
   "theme": "",
-  "dustloop_url": "http://dustloop.com/wiki/index.php?title=GGST/Anji_Mito/Data",
+  "dustloop_url": "http://dustloop.com/wiki/index.php?title=GGST/Anji_Mito",
   "moves": [
     {
       "Images": "http://dustloop.com/wiki/images/thumb/c/c2/GGST_Anji_Mito_5P.png/110px-GGST_Anji_Mito_5P.png",
@@ -524,7 +524,7 @@
       "Damage": "32",
       "Guard": "All",
       "Startup": "30 (43 if early cancelled from Fuujin)",
-      "Active": "5",
+      "Active": "8",
       "Recovery": "Total 43+6 after landing",
       "OnBlock": "+4",
       "OnHit": "+7",

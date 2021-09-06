@@ -57,6 +57,7 @@ func generateMoveEmbed(character character.Character, m move.Move) *discordgo.Me
 		SetDescription(description).
 		SetThumbnail(image).
 		SetColor(0xaf0016).
+		SetURL(character.DustloopUrl).
 		AddField("Damage", m.Damage).
 		AddField("Guard", m.Guard).
 		AddField("Startup", m.Startup).

@@ -11,7 +11,7 @@
   "icon": "http://dustloop.com/wiki/images/9/94/GGST_I-No_Icon.png",
   "voice": "",
   "theme": "",
-  "dustloop_url": "http://dustloop.com/wiki/index.php?title=GGST/I-No/Data",
+  "dustloop_url": "http://dustloop.com/wiki/index.php?title=GGST/I-No",
   "moves": [
     {
       "Images": "http://dustloop.com/wiki/images/thumb/0/06/GGST_I-No_5P.png/96px-GGST_I-No_5P.png",
@@ -103,7 +103,7 @@
       "Input": "5H",
       "Damage": "41",
       "Guard": "All",
-      "Startup": "16",
+      "Startup": "15",
       "Active": "4",
       "Recovery": "23",
       "OnBlock": "-8",

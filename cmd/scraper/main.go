@@ -145,7 +145,7 @@ func scrapeCharacter(name string) {
 	c.OnScraped(func(r *colly.Response) {
 		char.Name = strings.ToLower(name)
 		char.Moves = moves
-		char.DustloopUrl = url
+		char.DustloopUrl = fmt.Sprintf("%s/wiki/index.php?title=GGST/%s", baseURL, name)
 		writeJson(*char)
 	})
 

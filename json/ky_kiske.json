@@ -11,7 +11,7 @@
   "icon": "http://dustloop.com/wiki/images/d/d8/GGST_Ky_Kiske_Icon.png",
   "voice": "",
   "theme": "",
-  "dustloop_url": "http://dustloop.com/wiki/index.php?title=GGST/Ky_Kiske/Data",
+  "dustloop_url": "http://dustloop.com/wiki/index.php?title=GGST/Ky_Kiske",
   "moves": [
     {
       "Images": "http://dustloop.com/wiki/images/thumb/e/ec/GGST_Ky_Kiske_5P.png/110px-GGST_Ky_Kiske_5P.png",
@@ -325,7 +325,7 @@
       "Type": "normal",
       "RiscGain": "11.5",
       "Proration": "90%",
-      "Invuln": "Upper Body 1-13f",
+      "Invuln": "1-3f Upper Body, 4-13f Above Knees",
       "Cancel": ""
     },
     {
@@ -546,7 +546,7 @@
       "Guard": "All",
       "Startup": "21",
       "Active": "Until Hit",
-      "Recovery": "Until L+14",
+      "Recovery": "Until Landing+14",
       "OnBlock": "",
       "OnHit": "",
       "Level": "2",
@@ -567,7 +567,7 @@
       "Guard": "All",
       "Startup": "21",
       "Active": "Until Hit",
-      "Recovery": "Until L+14",
+      "Recovery": "Until Landing+14",
       "OnBlock": "",
       "OnHit": "",
       "Level": "2",
@@ -588,7 +588,7 @@
       "Guard": "All",
       "Startup": "21",
       "Active": "Until Hit",
-      "Recovery": "Until L+14",
+      "Recovery": "Until Landing+14",
       "OnBlock": "",
       "OnHit": "",
       "Level": "2",
@@ -609,7 +609,7 @@
       "Guard": "All",
       "Startup": "21",
       "Active": "Until Hit",
-      "Recovery": "Until L+14",
+      "Recovery": "Until Landing+14",
       "OnBlock": "",
       "OnHit": "",
       "Level": "2",
@@ -640,7 +640,7 @@
       "Type": "special",
       "RiscGain": "12[20]",
       "Proration": "80%",
-      "Invuln": "Strike 1-14f",
+      "Invuln": "1-14f Strike",
       "Cancel": ""
     },
     {
@@ -661,7 +661,7 @@
       "Type": "special",
       "RiscGain": "14",
       "Proration": "80%",
-      "Invuln": "Strike 1-14f",
+      "Invuln": "1-14f Strike",
       "Cancel": ""
     },
     {
@@ -682,7 +682,7 @@
       "Type": "special",
       "RiscGain": "12[20]",
       "Proration": "80%",
-      "Invuln": "Strike 1-16f",
+      "Invuln": "1-16f Strike",
       "Cancel": ""
     },
     {
@@ -703,7 +703,7 @@
       "Type": "special",
       "RiscGain": "12.5",
       "Proration": "80%",
-      "Invuln": "Strike 1-18f",
+      "Invuln": "1-18f Strike",
       "Cancel": ""
     },
     {
@@ -714,7 +714,7 @@
       "Guard": "All",
       "Startup": "11",
       "Active": "4",
-      "Recovery": "Until L+12",
+      "Recovery": "Until Landing+12",
       "OnBlock": "",
       "OnHit": "KD",
       "Level": "2[4]",
@@ -724,7 +724,7 @@
       "Type": "special",
       "RiscGain": "12[20]",
       "Proration": "80%",
-      "Invuln": "Strike 1-14f",
+      "Invuln": "1-14f Strike",
       "Cancel": ""
     },
     {
@@ -735,7 +735,7 @@
       "Guard": "All",
       "Startup": "11",
       "Active": "4",
-      "Recovery": "Until L+12",
+      "Recovery": "Until Landing+12",
       "OnBlock": "",
       "OnHit": "KD",
       "Level": "4",
@@ -745,7 +745,7 @@
       "Type": "special",
       "RiscGain": "14",
       "Proration": "80%",
-      "Invuln": "Strike 1-14f",
+      "Invuln": "1-14f Strike",
       "Cancel": ""
     },
     {
@@ -756,7 +756,7 @@
       "Guard": "All",
       "Startup": "13",
       "Active": "8",
-      "Recovery": "Until L+12",
+      "Recovery": "Until Landing+12",
       "OnBlock": "",
       "OnHit": "KD",
       "Level": "2[4]",
@@ -766,7 +766,7 @@
       "Type": "special",
       "RiscGain": "12[20]",
       "Proration": "80%",
-      "Invuln": "Strike 1-16f",
+      "Invuln": "1-16f Strike",
       "Cancel": ""
     },
     {
@@ -777,7 +777,7 @@
       "Guard": "All",
       "Startup": "13",
       "Active": "6",
-      "Recovery": "Until L+12",
+      "Recovery": "Until Landing+12",
       "OnBlock": "",
       "OnHit": "KD",
       "Level": "4",
@@ -787,7 +787,7 @@
       "Type": "special",
       "RiscGain": "12.5",
       "Proration": "80%",
-      "Invuln": "Strike 1-18f",
+      "Invuln": "1-18f Strike",
       "Cancel": ""
     },
     {
@@ -808,7 +808,7 @@
       "Type": "special",
       "RiscGain": "4.5, 5.5 [4.5, 9.5]",
       "Proration": "90%",
-      "Invuln": "none",
+      "Invuln": "1-4f Upper Body, 5-16f Above Knees",
       "Cancel": ""
     },
     {
@@ -829,7 +829,7 @@
       "Type": "special",
       "RiscGain": "3, 9.5",
       "Proration": "90%",
-      "Invuln": "none",
+      "Invuln": "",
       "Cancel": ""
     },
     {
@@ -850,7 +850,7 @@
       "Type": "special",
       "RiscGain": "11.5[19.5]",
       "Proration": "100%",
-      "Invuln": "none",
+      "Invuln": "8-11f Foot, 12-28f Below Waist",
       "Cancel": ""
     },
     {
@@ -871,7 +871,7 @@
       "Type": "special",
       "RiscGain": "9.5",
       "Proration": "100%",
-      "Invuln": "none",
+      "Invuln": "",
       "Cancel": ""
     },
     {
@@ -934,7 +934,7 @@
       "Type": "super",
       "RiscGain": "8 [8]",
       "Proration": "100%",
-      "Invuln": "All 1-10f",
+      "Invuln": "1-10f All",
       "Cancel": ""
     },
     {
@@ -955,7 +955,7 @@
       "Type": "super",
       "RiscGain": "16.5",
       "Proration": "100%",
-      "Invuln": "All 1-15f",
+      "Invuln": "1-15f All",
       "Cancel": ""
     },
     {
@@ -976,7 +976,7 @@
       "Type": "super",
       "RiscGain": "8 [8]",
       "Proration": "100%",
-      "Invuln": "All 1-10f",
+      "Invuln": "1-10f All",
       "Cancel": ""
     },
     {
@@ -997,7 +997,7 @@
       "Type": "super",
       "RiscGain": "16.5",
       "Proration": "100%",
-      "Invuln": "All 1-15f",
+      "Invuln": "1-15f All",
       "Cancel": ""
     },
     {

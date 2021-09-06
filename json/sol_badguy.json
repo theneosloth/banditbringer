@@ -11,7 +11,7 @@
   "icon": "http://dustloop.com/wiki/images/7/75/GGST_Sol_Badguy_Icon.png",
   "voice": "",
   "theme": "",
-  "dustloop_url": "http://dustloop.com/wiki/index.php?title=GGST/Sol_Badguy/Data",
+  "dustloop_url": "http://dustloop.com/wiki/index.php?title=GGST/Sol_Badguy",
   "moves": [
     {
       "Images": "http://dustloop.com/wiki/images/thumb/7/70/GGST_Sol_5P.png/101px-GGST_Sol_5P.png",
@@ -413,7 +413,7 @@
       "Cancel": "RP"
     },
     {
-      "Images": "http://dustloop.com/wiki/images/thumb/d/db/GGST_Sol_Ground_Throw.png/102px-GGST_Sol_Ground_Throw.png",
+      "Images": "http://dustloop.com/wiki/images/thumb/d/db/GGST_Sol_Ground_Throw.png/110px-GGST_Sol_Ground_Throw.png",
       "Name": "Ground Throw",
       "Input": "4D or 6D",
       "Damage": "80",
@@ -434,7 +434,7 @@
       "Cancel": "RP"
     },
     {
-      "Images": "http://dustloop.com/wiki/images/thumb/a/ac/GGST_Sol_Air_Throw.png/107px-GGST_Sol_Air_Throw.png",
+      "Images": "http://dustloop.com/wiki/images/thumb/a/ac/GGST_Sol_Air_Throw.png/110px-GGST_Sol_Air_Throw.png",
       "Name": "Air Throw",
       "Input": "j.4D or j.6D",
       "Damage": "80",
@@ -531,7 +531,7 @@
       "Level": "2",
       "ChType": "Mid",
       "Hitboxes": "",
-      "Notes": "Has two active windows, but only hits once., Airborne from 9F onwards.",
+      "Notes": "Has two active windows, but only hits once., Airborne from 10F onwards.",
       "Type": "special",
       "RiscGain": "15",
       "Proration": "80%",
@@ -609,7 +609,7 @@
       "Guard": "All",
       "Startup": "16",
       "Active": "6",
-      "Recovery": "23+9 after landing",
+      "Recovery": "9+9 after landing",
       "OnBlock": "-7",
       "OnHit": "KD(+28)",
       "Level": "3",
@@ -693,7 +693,7 @@
       "Guard": "Ground Throw: 120000",
       "Startup": "6",
       "Active": "2",
-      "Recovery": "Whiff: 41",
+      "Recovery": "41",
       "OnBlock": "",
       "OnHit": "HKD(+15)",
       "Level": "",
@@ -776,8 +776,8 @@
       "Damage": "40,161",
       "Guard": "Ground Throw: 150000",
       "Startup": "13+7",
-      "Active": "49",
-      "Recovery": "Total 84",
+      "Active": "16",
+      "Recovery": "49",
       "OnBlock": "",
       "OnHit": "HKD(+27)",
       "Level": "",
@@ -787,7 +787,7 @@
       "Type": "super",
       "RiscGain": "",
       "Proration": "100%",
-      "Invuln": "14F onwards Guardpoint",
+      "Invuln": "14~35F Throw, Guardpoint",
       "Cancel": "RP"
     }
   ]

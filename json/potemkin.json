@@ -11,7 +11,7 @@
   "icon": "http://dustloop.com/wiki/images/f/f5/GGST_Potemkin_Icon.png",
   "voice": "",
   "theme": "",
-  "dustloop_url": "http://dustloop.com/wiki/index.php?title=GGST/Potemkin/Data",
+  "dustloop_url": "http://dustloop.com/wiki/index.php?title=GGST/Potemkin",
   "moves": [
     {
       "Images": "http://dustloop.com/wiki/images/thumb/7/71/GGST_Potemkin_5P.png/110px-GGST_Potemkin_5P.png",
@@ -273,9 +273,9 @@
       "Guard": "All",
       "Startup": "22",
       "Active": "5",
-      "Recovery": "24",
-      "OnBlock": "-12",
-      "OnHit": "SKD (+26)",
+      "Recovery": "18",
+      "OnBlock": "-6",
+      "OnHit": "-3",
       "Level": "3",
       "ChType": "",
       "Hitboxes": "",
