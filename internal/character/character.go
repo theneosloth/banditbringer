@@ -16,6 +16,8 @@ type Character struct {
 	Prejump               string      `json:"prejump"`
 	Backdash              string      `json:"backdash"`
 	Weight                string      `json:"weight"`
+	JumpDuration          string      `json: "jump_duration"`
+	HighJumpDuration      string      `json: "high_jump_duration"`
 	UniqueMovementOptions string      `json:"unique_movement_options"`
 	Portrait              string      `json:"portrait"`
 	Icon                  string      `json:"icon"`

@@ -6,9 +6,11 @@
   "prejump": "4",
   "backdash": "18f/5f invuln",
   "weight": "Light",
+  "JumpDuration": "",
+  "HighJumpDuration": "",
   "unique_movement_options": "",
-  "portrait": "http://dustloop.com/wiki/images/thumb/6/6f/GGST_Jack-O%27_Portrait.png/210px-GGST_Jack-O%27_Portrait.png",
-  "icon": "http://dustloop.com/wiki/images/6/65/GGST_Jack-O%27_Icon.png",
+  "portrait": "",
+  "icon": "",
   "voice": "",
   "theme": "",
   "dustloop_url": "http://dustloop.com/wiki/index.php?title=GGST/Jack-O",
@@ -392,7 +394,7 @@
       "Cancel": ""
     },
     {
-      "Images": "",
+      "Images": "http://dustloop.com/wiki/images/thumb/9/91/GGST_JackO_Ground_Throw.png/110px-GGST_JackO_Ground_Throw.png",
       "Name": "Ground Throw",
       "Input": "4D or 6D",
       "Damage": "80",
@@ -413,7 +415,7 @@
       "Cancel": ""
     },
     {
-      "Images": "",
+      "Images": "http://dustloop.com/wiki/images/thumb/7/79/GGST_JackO_Air_Throw.png/110px-GGST_JackO_Air_Throw.png",
       "Name": "Air Throw",
       "Input": "j.4D or j.6D",
       "Damage": "80",
@@ -630,7 +632,7 @@
       "Guard": "All",
       "Startup": "15",
       "Active": "",
-      "Recovery": "",
+      "Recovery": "Total 43",
       "OnBlock": "-12",
       "OnHit": "KD",
       "Level": "",

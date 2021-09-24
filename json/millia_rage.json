@@ -6,11 +6,13 @@
   "prejump": "4",
   "backdash": "16f/4f invuln",
   "weight": "Light",
+  "JumpDuration": "",
+  "HighJumpDuration": "",
   "unique_movement_options": "An Extra Airdash, Kapel, Turbo Fall, Mirazh",
-  "portrait": "http://dustloop.com/wiki/images/thumb/a/ab/GGST_Millia_Rage_Portrait.png/210px-GGST_Millia_Rage_Portrait.png",
-  "icon": "http://dustloop.com/wiki/images/d/d8/GGST_Millia_Rage_Icon.png",
-  "voice": "[[File:Japanese: Yuuko SumitomoEnglish: Tara Platt]]",
-  "theme": "File:Love the Subhuman Self",
+  "portrait": "",
+  "icon": "",
+  "voice": "",
+  "theme": "",
   "dustloop_url": "http://dustloop.com/wiki/index.php?title=GGST/Millia_Rage",
   "moves": [
     {
