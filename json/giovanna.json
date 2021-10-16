@@ -5,12 +5,20 @@
   "risc_modifier": "1",
   "prejump": "4",
   "backdash": "19f/5f invuln",
+  "forward_dash": "",
   "weight": "Light",
-  "JumpDuration": "",
-  "HighJumpDuration": "",
+  "jump_duration": "38",
+  "high_jump_duration": "49",
+  "jump_height": "",
+  "earliest_forward_iad": "4 [high jump: 3]",
+  "earliest_backward_iad": "4 [high jump: 3]",
+  "forward_ad_duration": "25/19",
+  "backward_ad_duration": "12",
+  "forward_ad_attack_transition": "18",
+  "backward_ad_attack_transition": "6",
   "unique_movement_options": "",
-  "portrait": "",
-  "icon": "",
+  "portrait": "http://dustloop.com",
+  "icon": "http://dustloop.com",
   "voice": "",
   "theme": "",
   "dustloop_url": "http://dustloop.com/wiki/index.php?title=GGST/Giovanna",
@@ -91,7 +99,7 @@
       "OnHit": "-1",
       "Level": "2",
       "ChType": "",
-      "Hitboxes": "",
+      "Hitboxes": "http://dustloop.com/wiki/images/thumb/6/64/GGST_Giovanna_fS_Hitbox.png/56px-GGST_Giovanna_fS_Hitbox.png",
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
@@ -112,7 +120,7 @@
       "OnHit": "-2",
       "Level": "3",
       "ChType": "",
-      "Hitboxes": "",
+      "Hitboxes": "http://dustloop.com/wiki/images/thumb/8/84/GGST_Giovanna_5H_Hitbox.png/110px-GGST_Giovanna_5H_Hitbox.png",
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
@@ -133,7 +141,7 @@
       "OnHit": "+1",
       "Level": "0",
       "ChType": "",
-      "Hitboxes": "",
+      "Hitboxes": "http://dustloop.com/wiki/images/thumb/e/e5/GGST_Giovanna_2P_Hitbox.png/110px-GGST_Giovanna_2P_Hitbox.png",
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
@@ -154,7 +162,7 @@
       "OnHit": "+1",
       "Level": "1",
       "ChType": "",
-      "Hitboxes": "",
+      "Hitboxes": "http://dustloop.com/wiki/images/thumb/f/f2/GGST_Giovanna_2K_Hitbox.png/110px-GGST_Giovanna_2K_Hitbox.png",
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
@@ -196,7 +204,7 @@
       "OnHit": "-5",
       "Level": "4",
       "ChType": "",
-      "Hitboxes": "",
+      "Hitboxes": "http://dustloop.com/wiki/images/thumb/a/ab/GGST_Giovanna_2H_Hitbox.png/110px-GGST_Giovanna_2H_Hitbox.png",
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
@@ -205,7 +213,7 @@
       "Cancel": ""
     },
     {
-      "Images": "",
+      "Images": "http://dustloop.com/wiki/images/thumb/7/79/GGST_Giovanna_jP.png/110px-GGST_Giovanna_jP.png",
       "Name": "",
       "Input": "j.P",
       "Damage": "20 (21) [22]",
@@ -226,7 +234,7 @@
       "Cancel": ""
     },
     {
-      "Images": "",
+      "Images": "http://dustloop.com/wiki/images/thumb/8/88/GGST_Giovanna_jK.png/110px-GGST_Giovanna_jK.png",
       "Name": "",
       "Input": "j.K",
       "Damage": "25 (26) [27]",
@@ -247,7 +255,7 @@
       "Cancel": ""
     },
     {
-      "Images": "",
+      "Images": "http://dustloop.com/wiki/images/thumb/f/f4/GGST_Giovanna_jS.png/110px-GGST_Giovanna_jS.png",
       "Name": "",
       "Input": "j.S",
       "Damage": "30 (31) [33]",
@@ -268,7 +276,7 @@
       "Cancel": ""
     },
     {
-      "Images": "",
+      "Images": "http://dustloop.com/wiki/images/thumb/2/26/GGST_Giovanna_jH.png/110px-GGST_Giovanna_jH.png",
       "Name": "",
       "Input": "j.H",
       "Damage": "35 (36) [38]",
@@ -322,7 +330,7 @@
       "OnHit": "KD",
       "Level": "2",
       "ChType": "",
-      "Hitboxes": "",
+      "Hitboxes": "http://dustloop.com/wiki/images/thumb/4/4d/GGST_Giovanna_6P_Hitbox.png/110px-GGST_Giovanna_6P_Hitbox.png",
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
@@ -331,7 +339,7 @@
       "Cancel": ""
     },
     {
-      "Images": "",
+      "Images": "http://dustloop.com/wiki/images/thumb/2/2a/GGST_Giovanna_6H.png/99px-GGST_Giovanna_6H.png",
       "Name": "",
       "Input": "6H",
       "Damage": "32 (33) [35]",
@@ -352,7 +360,7 @@
       "Cancel": ""
     },
     {
-      "Images": "",
+      "Images": "http://dustloop.com/wiki/images/thumb/1/1e/GGST_Giovanna_6HH.png/110px-GGST_Giovanna_6HH.png",
       "Name": "",
       "Input": "6HH",
       "Damage": "28 (28) [30]",
@@ -373,7 +381,7 @@
       "Cancel": ""
     },
     {
-      "Images": "",
+      "Images": "http://dustloop.com/wiki/images/thumb/0/05/GGST_Giovanna_6HHH.png/104px-GGST_Giovanna_6HHH.png",
       "Name": "",
       "Input": "6HHH",
       "Damage": "29 (31) [32]",
@@ -406,7 +414,7 @@
       "OnHit": "HKD",
       "Level": "2",
       "ChType": "",
-      "Hitboxes": "",
+      "Hitboxes": "http://dustloop.com/wiki/images/thumb/4/48/GGST_Giovanna_2D_Hitbox.png/110px-GGST_Giovanna_2D_Hitbox.png",
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
@@ -427,7 +435,7 @@
       "OnHit": "-0",
       "Level": "2",
       "ChType": "",
-      "Hitboxes": "",
+      "Hitboxes": "http://dustloop.com/wiki/images/thumb/6/6c/GGST_Giovanna_5D_Hitbox.png/86px-GGST_Giovanna_5D_Hitbox.png",
       "Notes": "",
       "Type": "normal",
       "RiscGain": "",
@@ -457,7 +465,7 @@
       "Cancel": ""
     },
     {
-      "Images": "http://dustloop.com/wiki/images/thumb/c/cd/GGST_Giovanna_Ground_Throw.png/105px-GGST_Giovanna_Ground_Throw.png",
+      "Images": "http://dustloop.com/wiki/images/thumb/c/cd/GGST_Giovanna_Ground_Throw.png/110px-GGST_Giovanna_Ground_Throw.png",
       "Name": "Ground Throw",
       "Input": "4D or 6D",
       "Damage": "80 (84) [88]",
@@ -541,7 +549,7 @@
       "Cancel": ""
     },
     {
-      "Images": "http://dustloop.com/wiki/images/thumb/4/42/GGST_Giovanna_Sol_Nascente.png/102px-GGST_Giovanna_Sol_Nascente.png",
+      "Images": "http://dustloop.com/wiki/images/thumb/4/42/GGST_Giovanna_Sol_Nascente.png/110px-GGST_Giovanna_Sol_Nascente.png",
       "Name": "Sol Nascente",
       "Input": "623S",
       "Damage": "40 (42) [44]",
@@ -558,11 +566,11 @@
       "Type": "special",
       "RiscGain": "",
       "Proration": "90%",
-      "Invuln": "upper body invuln 1~6 above the knees 7~9",
+      "Invuln": "upper body invuln 1~6above the knees 7~9",
       "Cancel": ""
     },
     {
-      "Images": "",
+      "Images": "http://dustloop.com/wiki/images/thumb/d/d6/GGST_Giovanna_Sol_Poente_1.png/93px-GGST_Giovanna_Sol_Poente_1.png",
       "Name": "Sol Poente",
       "Input": "214S",
       "Damage": "30 (31) [33]",
@@ -583,7 +591,7 @@
       "Cancel": ""
     },
     {
-      "Images": "",
+      "Images": "http://dustloop.com/wiki/images/thumb/d/d6/GGST_Giovanna_Sol_Poente_1.png/93px-GGST_Giovanna_Sol_Poente_1.png",
       "Name": "Sol Poente",
       "Input": "j.214S",
       "Damage": "30 (31) [33]",
@@ -625,7 +633,7 @@
       "Cancel": ""
     },
     {
-      "Images": "",
+      "Images": "http://dustloop.com/wiki/images/thumb/9/9f/GGST_Giovanna_Tempestade_1.png/110px-GGST_Giovanna_Tempestade_1.png",
       "Name": "Tempestade",
       "Input": "j.236236H",
       "Damage": "140 [150]",

@@ -9,23 +9,31 @@ import (
 
 // https://dustloop.com/wiki/index.php?title=GGST/Sol_Badguy/Data
 type Character struct {
-	Name                  string      `json:"name"`
-	Defense               string      `json:"defense"`
-	Guts                  string      `json:"guts"`
-	RiscModifier          string      `json:"risc_modifier"`
-	Prejump               string      `json:"prejump"`
-	Backdash              string      `json:"backdash"`
-	Weight                string      `json:"weight"`
-	JumpDuration          string      `json: "jump_duration"`
-	HighJumpDuration      string      `json: "high_jump_duration"`
-	UniqueMovementOptions string      `json:"unique_movement_options"`
-	Portrait              string      `json:"portrait"`
-	Icon                  string      `json:"icon"`
-	Voice                 string      `json:"voice"`
-	Theme                 string      `json:"theme"`
-	DustloopUrl           string      `json:"dustloop_url"`
-	Moves                 []move.Move `json:"moves"`
-	aliases               []string
+	Name                            string      `json:"name"`
+	Defense                         string      `json:"defense"`
+	Guts                            string      `json:"guts"`
+	RiscModifier                    string      `json:"risc_modifier"`
+	Prejump                         string      `json:"prejump"`
+	Backdash                        string      `json:"backdash"`
+	ForwardDash                     string      `json:"forward_dash"`
+	Weight                          string      `json:"weight"`
+	JumpDuration                    string      `json:"jump_duration"`
+	HighJumpDuration                string      `json:"high_jump_duration"`
+	JumpHeight                      string      `json:"jump_height"`
+	EarliestForwardInstantAirDash   string      `json:"earliest_forward_iad"`
+	EarliestBackwardInstantAirDash  string      `json:"earliest_backward_iad"`
+	ForwardAirDashDuration          string      `json:"forward_ad_duration"`
+	BackwardAirDashDuration         string      `json:"backward_ad_duration"`
+	ForwardAirDashAttackTransition  string      `json:"forward_ad_attack_transition"`
+	BackwardAirDashAttackTransition string      `json:"backward_ad_attack_transition"`
+	UniqueMovementOptions           string      `json:"unique_movement_options"`
+	Portrait                        string      `json:"portrait"`
+	Icon                            string      `json:"icon"`
+	Voice                           string      `json:"voice"`
+	Theme                           string      `json:"theme"`
+	DustloopUrl                     string      `json:"dustloop_url"`
+	Moves                           []move.Move `json:"moves"`
+	aliases                         []string
 }
 
 var validCharacters = map[string][]string{
