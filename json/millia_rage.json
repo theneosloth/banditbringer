@@ -346,7 +346,7 @@
       "Guard": "High",
       "Startup": "28",
       "Active": "2",
-      "Recovery": "11",
+      "Recovery": "14",
       "OnBlock": "-2",
       "OnHit": "+2",
       "Level": "2",

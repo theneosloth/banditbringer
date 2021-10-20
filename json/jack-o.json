@@ -171,7 +171,7 @@
       "Cancel": ""
     },
     {
-      "Images": "http://dustloop.com/wiki/images/thumb/f/f4/GGST_Jack-O_2S.png/74px-GGST_Jack-O_2S.png",
+      "Images": "http://dustloop.com/wiki/images/thumb/f/f4/GGST_Jack-O_2S.png/75px-GGST_Jack-O_2S.png",
       "Name": "",
       "Input": "2S",
       "Damage": "31",
@@ -183,7 +183,7 @@
       "OnHit": "-12",
       "Level": "2",
       "ChType": "Mid",
-      "Hitboxes": "",
+      "Hitboxes": "http://dustloop.com/wiki/images/thumb/b/bc/GGST_JackO_2S_Hitbox.png/75px-GGST_JackO_2S_Hitbox.png",
       "Notes": "",
       "Type": "normal",
       "RiscGain": "1500",
@@ -717,7 +717,7 @@
       "Cancel": ""
     },
     {
-      "Images": "http://dustloop.com/wiki/images/thumb/5/50/GGST_Jack-O_236236S.png/89px-GGST_Jack-O_236236S.png",
+      "Images": "http://dustloop.com/wiki/images/thumb/d/df/GGST_JackO_236236S.png/89px-GGST_JackO_236236S.png",
       "Name": "Cheer Servant On (S)",
       "Input": "236236S",
       "Damage": "",
@@ -738,7 +738,7 @@
       "Cancel": ""
     },
     {
-      "Images": "http://dustloop.com/wiki/images/thumb/e/e8/GGST_Jack-O_236236H.png/89px-GGST_Jack-O_236236H.png",
+      "Images": "http://dustloop.com/wiki/images/thumb/8/8b/GGST_JackO_236236H.png/89px-GGST_JackO_236236H.png",
       "Name": "Cheer Servant On (H)",
       "Input": "236236H",
       "Damage": "",

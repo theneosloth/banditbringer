@@ -276,7 +276,7 @@
       "Cancel": ""
     },
     {
-      "Images": "http://dustloop.com/wiki/images/thumb/2/2e/GGST_Axl_Low_j.H.png/56px-GGST_Axl_Low_j.H.png",
+      "Images": "http://dustloop.com/wiki/images/thumb/2/2e/GGST_Axl_Low_j.H.png/55px-GGST_Axl_Low_j.H.png",
       "Name": "",
       "Input": "j.H",
       "Damage": "40 [52]",
@@ -303,7 +303,7 @@
       "Damage": "44",
       "Guard": "High",
       "Startup": "10",
-      "Active": "5",
+      "Active": "3",
       "Recovery": "22",
       "OnBlock": "",
       "OnHit": "",
