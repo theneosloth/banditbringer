@@ -512,7 +512,7 @@
       "Input": "236H",
       "Damage": "35",
       "Guard": "All",
-      "Startup": "15 [31]",
+      "Startup": "16 [32]",
       "Active": "4",
       "Recovery": "29",
       "OnBlock": "-16",

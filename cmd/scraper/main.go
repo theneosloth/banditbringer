@@ -118,24 +118,40 @@ func scrapeCharacter(name string) {
 		})
 
 		table.ForEach("tr td", func(i int, th *colly.HTMLElement) {
-			field := HeadingToStructName(structure[i])
 
-			result := ""
-			if field == "Images" || field == "Hitboxes" {
-				if th.ChildAttr("img", "src") != "" {
-					result = fmt.Sprintf("%s%s", baseURL, th.ChildAttr("img", "src"))
+			// Images don't have a matching header, have to be handled first
+			if i >= len(structure) {
+				// This will break eventually
+				imageIndex := len(structure)
+				hitboxIndex := imageIndex + 1
+
+				getUrl := func() string {
+					imgUrl := th.ChildAttr("img", "src")
+					if imgUrl == "" {
+						return ""
+					}
+					return fmt.Sprintf("%s%s", baseURL, th.ChildAttr("img", "src"))
 				}
 
-			} else {
-				result = strings.TrimSpace(th.Text)
+				if i == imageIndex {
+					m.SetFieldByName("Images", getUrl())
+				}
+
+				if i == hitboxIndex {
+					m.SetFieldByName("Hitboxes", getUrl())
+				}
+				return
 			}
+
+			field := HeadingToStructName(structure[i])
+			result := strings.TrimSpace(th.Text)
 
 			err := m.SetFieldByName(field, result)
 			if err != nil {
 				fmt.Println("failed to set", err, field)
 			}
-
 		})
+
 		if len(m.Input) > 0 || len(m.Name) > 0 {
 			moves = append(moves, m)
 		}
