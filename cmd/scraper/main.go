@@ -46,6 +46,7 @@ func HeadingToStructName(name string) string {
 	name = strings.TrimSpace(name)
 	aliases := map[string]string{
 		"R.I.S.C. Gain":          "RiscGain",
+		"R.I.S.C. Loss":          "RiscLoss",
 		"CH Type":                "ChType",
 		"PreJump":                "Prejump",
 		"R.I.S.C. Gain Modifier": "RiscModifier",

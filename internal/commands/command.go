@@ -29,7 +29,9 @@ func (c *Command) checkCommand(m string) bool {
 		return false
 	}
 
-	return strings.HasPrefix(m, c.Prefix)
+	// Make sure the command only has the prefix once to be valid
+	trimPrefix := strings.TrimPrefix(m, c.Prefix)
+	return strings.HasPrefix(m, c.Prefix) && !strings.HasPrefix(trimPrefix, c.Prefix)
 }
 
 func (c *Command) Run(s *discordgo.Session, m *discordgo.MessageCreate) {
